@@ -1,17 +1,13 @@
 <div class="play-page" ng-controller="PlayController as ctrl">
 
-
-    <p class="play-page__current-score">Current score {{ctrl.player}}: {{ctrl.playerScore}} vs. Super Sity: {{ctrl.computerScore}}</p>
+    <div class="play-page__current-score">Current score {{ctrl.player}}: {{ctrl.playerScore}} vs. Super Sity: {{ctrl.computerScore}}</div>
 
     <button class="button button--restart" ng-click=ctrl.resetScores()>Restart</button>
 
+    <div class="play-page__content">Pick yo move, yo.</div>
 
-
-    <p class="play-page__content">Pick yo move, yo.</p>
-
-  <img ng-repeat="move in ctrl.moves" ng-src="../../img/{{move}}.png" ng-click="ctrl.play(move)" class="play-page__content__move play-page__content__move--{{move}}">
-
-
-  <!-- <div class="{{move}}"></div> -->
+    <div class="play-page__images">
+      <img ng-repeat="move in ctrl.moves" ng-src="../../img/{{move}}.png" ng-click="ctrl.play(move)" class="play-page__images play-page__images--{{move}}" animate-spin>
+    </div>
 
 </div>

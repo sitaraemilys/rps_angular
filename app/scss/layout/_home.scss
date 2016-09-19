@@ -3,48 +3,60 @@
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 0.5%;
+  text-align: center;
 
   &__main-title {
   color: black;
   text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
   text-transform: uppercase;
-  font-family: 'Cutive Mono', monospace;
   font-size: 36px;
 
     &--highlight {
-      background-color: #ffffcc;
+      background-color: white;
     }
 
   }
 
   &__secondary-title {
-    font-family: 'Cutive Mono', monospace;
+
     letter-spacing: 2px;
-    color: #ffffcc;
+    color: white;
     text-shadow: 1px 1px 1px #000;
-    font-size: 28px;
+    font-size: 22px;
 
     &--highlight {
       background-color: black;
     }
   }
+}
 
 
-  &__content {
+.content {
+  margin-top: 200px;
+  color: white;
+  text-shadow: -1px -1px 1px #fff;
+  font-size: 16px;
+
+  &__input-with-button {
+    display:inline-block;
+    overflow:hidden;
+
+  }
+
+  &__input {
     font-family: 'Cutive Mono', monospace;
-    color: #ffffcc;
-    text-shadow: -1px -1px 1px #fff;
-    font-size: 18px;
-    margin-top: 400px;
-    margin-left: 650px;
+    width: 257px;
+    height: 25px;
+    background-color: white;
+    border: 0;
 
-    &__input {
-      height: 25px;
+    &:focus {
+      outline: none !important;
+      border: solid 3px black;
+    }
 
-      &:focus {
-        outline: none !important;
-        border: solid 3px yellow;
-      }
+    &#name {
+      font-size: 16px;
     }
   }
 }

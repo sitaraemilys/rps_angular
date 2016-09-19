@@ -1,7 +1,4 @@
-<div class="resultpage" ng-controller="ResultController as ctrl">
-
-<p class="result-page__content">{{ctrl.gameResult()}}</p>
-
-<button class="button button--restart" ng-click=ctrl.restart()>Restart</button>
-
+<div class="result-page" ng-controller="ResultController as ctrl">
+  <button class="button button--restart" ng-click=ctrl.restart()>Restart</button>
+  <p class="result-page__content"><span class="result-page__content result-page__content--highlight">{{ctrl.gameResult()}}</span></p>
 </div>

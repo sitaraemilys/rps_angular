@@ -3,10 +3,11 @@
 Base Imports
  -------------------------------------------------- */
 body {
-  background-image: url("../img/man.jpeg");
+  background-image: url("../img/background.jpeg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   position: relative;
+  font-family: 'Cutive Mono', monospace;
   overflow: none !important;
   overflow-x: none !important;
   overflow-y: none !important; }
@@ -17,55 +18,102 @@ Layout Imports
 .home-page {
   padding-left: 2%;
   padding-right: 2%;
-  padding-top: 0.5%; }
+  padding-top: 0.5%;
+  text-align: center; }
   .home-page__main-title {
     color: black;
     text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
     text-transform: uppercase;
-    font-family: 'Cutive Mono', monospace;
     font-size: 36px; }
     .home-page__main-title--highlight {
-      background-color: #ffffcc; }
+      background-color: white; }
   .home-page__secondary-title {
-    font-family: 'Cutive Mono', monospace;
     letter-spacing: 2px;
-    color: #ffffcc;
+    color: white;
     text-shadow: 1px 1px 1px #000;
-    font-size: 28px; }
+    font-size: 22px; }
     .home-page__secondary-title--highlight {
       background-color: black; }
-  .home-page__content {
-    font-family: 'Cutive Mono', monospace;
-    color: #ffffcc;
-    text-shadow: -1px -1px 1px #fff;
-    font-size: 18px;
-    margin-top: 400px;
-    margin-left: 650px; }
-    .home-page__content__input {
-      height: 25px; }
-      .home-page__content__input:focus {
-        outline: none !important;
-        border: solid 3px yellow; }
 
-.play-page__content__move {
-  width: 33%; }
-  .play-page__content__move--rock {
-    margin-left: 13px; }
+.content {
+  margin-top: 200px;
+  color: white;
+  text-shadow: -1px -1px 1px #fff;
+  font-size: 16px; }
+  .content__input-with-button {
+    display: inline-block;
+    overflow: hidden; }
+  .content__input {
+    font-family: 'Cutive Mono', monospace;
+    width: 257px;
+    height: 25px;
+    background-color: white;
+    border: 0; }
+    .content__input:focus {
+      outline: none !important;
+      border: solid 3px black; }
+    .content__input#name {
+      font-size: 16px; }
+
+.play-page__current-score {
+  background-color: white;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  text-align: right;
+  font-size: 18px; }
+.play-page__content {
+  letter-spacing: 2px;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 28px; }
+.play-page__images {
+  margin: 0 auto;
+  max-width: 33%;
+  max-height: 450px; }
+
+.spin-add {
+  -webkit-animation: spin 4s linear;
+  -moz-animation: spin 4s linear;
+  animation: spin 4s linear; }
+
+* {
+  outline: 2px dotted green; }
+
+.result-page__content {
+  margin-top: 436px;
+  margin-left: 200px;
+  color: black;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  text-transform: uppercase;
+  font-size: 36px;
+  text-align: center; }
+  .result-page__content--highlight {
+    background-color: white; }
+  .result-page__content__image {
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+    margin-left: 600px; }
 
 /* --------------------------------------------------
 Component Imports
  -------------------------------------------------- */
 .button {
-  background-color: Transparent;
   border: solid 3px black;
-  color: white;
-  padding: 9px 18px;
+  background-color: black;
+  text-shadow: -1px -1px 1px #fff;
+  color: #ffffcc;
+  text-shadow: 1px 1px 1px #000;
+  padding: 6px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
   font-family: 'Cutive Mono', monospace; }
   .button:hover {
-    background-color: black; }
+    background-color: Transparent; }
+  .button:focus {
+    outline: none !important; }
+  .button--restart {
+    margin-left: 1250px; }
 
 /*# sourceMappingURL=application.css.map */

@@ -1,8 +1,10 @@
 .button {
-  background-color: Transparent;
   border: solid 3px black;
-  color: white;
-  padding: 9px 18px;
+  background-color: black;
+  text-shadow: -1px -1px 1px #fff;
+  color: #ffffcc;
+  text-shadow: 1px 1px 1px #000;
+  padding: 6px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -10,6 +12,14 @@
   font-family: 'Cutive Mono', monospace;
 
   &:hover {
-    background-color: black;
+    background-color: Transparent;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+
+  &--restart {
+    margin-left: 1250px;
   }
 }

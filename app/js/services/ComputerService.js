@@ -1,6 +1,8 @@
 angular.module('rockPaperScissors')
        .service('ComputerService', ComputerService);
 
+// ComputerService.$inject = ['PlayerService', 'ScoreService', '$state'];
+
 function ComputerService(){
 
   var self = this;

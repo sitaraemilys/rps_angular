@@ -1,17 +1,30 @@
 .play-page {
 
+  &__current-score {
+    background-color: white;
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+    text-align: right;
+    font-size: 18px;
+  }
+
   &__content {
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 28px;
+  }
 
-    &__move {
-      width: 33%;
-      // margin-bottom: 100px !important;
-
-      &--rock {
-        margin-left: 13px;
-        // margin-bottom: 564px;
-      }
-
-    }
-
+  &__images {
+    margin: 0 auto;
+    max-width: 33%;
+    max-height: 450px;
   }
 }
+
+.spin-add {
+   -webkit-animation:spin 4s linear;
+    -moz-animation:spin 4s linear;
+    animation:spin 4s linear;
+}
+
+* { outline: 2px dotted green; }

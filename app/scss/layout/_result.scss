@@ -1,0 +1,23 @@
+.result-page {
+
+  &__content {
+    margin-top: 436px;
+    margin-left: 200px;
+    color: black;
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+    text-transform: uppercase;
+    font-size: 36px;
+    text-align: center;
+
+    &--highlight {
+      background-color: white;
+    }
+
+    &__image {
+      width: 800px;
+      display: block;
+      margin: 0 auto;
+      margin-left: 600px;
+    }
+  }
+}
