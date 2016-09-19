@@ -16,8 +16,12 @@
 
   &__images {
     margin: 0 auto;
-    max-width: 33%;
     max-height: 450px;
+    margin-left: 50px;
+
+    &--rock {
+      margin-top: 20px;
+    }
   }
 }
 

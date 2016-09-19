@@ -3,7 +3,7 @@
 Base Imports
  -------------------------------------------------- */
 body {
-  background-image: url("../img/background.jpeg");
+  background-image: url("../img/squared_paper.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   position: relative;
@@ -24,34 +24,29 @@ Layout Imports
     color: black;
     text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
     text-transform: uppercase;
-    font-size: 36px; }
+    font-size: 39px; }
     .home-page__main-title--highlight {
-      background-color: white; }
+      background-color: rgba(255, 255, 204, 0.5); }
   .home-page__secondary-title {
+    font-family: 'Sacramento', cursive;
     letter-spacing: 2px;
-    color: white;
-    text-shadow: 1px 1px 1px #000;
-    font-size: 22px; }
+    color: black;
+    text-shadow: 1px 1px 1px #fff;
+    font-size: 48px; }
     .home-page__secondary-title--highlight {
       background-color: black; }
 
 .content {
-  margin-top: 200px;
-  color: white;
-  text-shadow: -1px -1px 1px #fff;
-  font-size: 16px; }
-  .content__input-with-button {
-    display: inline-block;
-    overflow: hidden; }
+  margin-top: 212px; }
   .content__input {
+    background-color: #ffffcc;
     font-family: 'Cutive Mono', monospace;
     width: 257px;
-    height: 25px;
-    background-color: white;
+    height: 33px;
     border: 0; }
     .content__input:focus {
       outline: none !important;
-      border: solid 3px black; }
+      border: solid 3px #009933; }
     .content__input#name {
       font-size: 16px; }
 
@@ -67,8 +62,10 @@ Layout Imports
   font-size: 28px; }
 .play-page__images {
   margin: 0 auto;
-  max-width: 33%;
-  max-height: 450px; }
+  max-height: 450px;
+  margin-left: 50px; }
+  .play-page__images--rock {
+    margin-top: 20px; }
 
 .spin-add {
   -webkit-animation: spin 4s linear;
@@ -79,27 +76,24 @@ Layout Imports
   outline: 2px dotted green; }
 
 .result-page__content {
-  margin-top: 436px;
-  margin-left: 200px;
+  text-align: center;
   color: black;
   text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
   text-transform: uppercase;
-  font-size: 36px;
-  text-align: center; }
+  font-size: 39px; }
   .result-page__content--highlight {
-    background-color: white; }
+    background-color: rgba(255, 255, 204, 0.5); }
   .result-page__content__image {
-    width: 800px;
+    width: 600px;
     display: block;
-    margin: 0 auto;
-    margin-left: 600px; }
+    margin: 0 auto; }
 
 /* --------------------------------------------------
 Component Imports
  -------------------------------------------------- */
 .button {
-  border: solid 3px black;
-  background-color: black;
+  border: solid 3px #009933;
+  background-color: #009933;
   text-shadow: -1px -1px 1px #fff;
   color: #ffffcc;
   text-shadow: 1px 1px 1px #000;
@@ -110,10 +104,13 @@ Component Imports
   font-size: 20px;
   font-family: 'Cutive Mono', monospace; }
   .button:hover {
-    background-color: Transparent; }
+    background-color: Transparent;
+    color: #009933; }
   .button:focus {
     outline: none !important; }
   .button--restart {
-    margin-left: 1250px; }
+    position: relative;
+    right: 0;
+    bottom: 0; }
 
 /*# sourceMappingURL=application.css.map */

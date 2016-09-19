@@ -9,20 +9,21 @@
   color: black;
   text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 39px;
 
     &--highlight {
-      background-color: white;
+      background-color: rgba(255, 255, 204, 0.5);
     }
 
   }
 
   &__secondary-title {
 
+    font-family: 'Sacramento', cursive;
     letter-spacing: 2px;
-    color: white;
-    text-shadow: 1px 1px 1px #000;
-    font-size: 22px;
+    color: black;
+    text-shadow: 1px 1px 1px #fff;
+    font-size: 48px;
 
     &--highlight {
       background-color: black;
@@ -32,27 +33,18 @@
 
 
 .content {
-  margin-top: 200px;
-  color: white;
-  text-shadow: -1px -1px 1px #fff;
-  font-size: 16px;
-
-  &__input-with-button {
-    display:inline-block;
-    overflow:hidden;
-
-  }
+  margin-top: 212px;
 
   &__input {
+    background-color:  #ffffcc;
     font-family: 'Cutive Mono', monospace;
     width: 257px;
-    height: 25px;
-    background-color: white;
+    height: 33px;
     border: 0;
 
     &:focus {
       outline: none !important;
-      border: solid 3px black;
+      border: solid 3px #009933;
     }
 
     &#name {

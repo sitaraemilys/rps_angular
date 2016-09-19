@@ -20,7 +20,8 @@ function PlayController(PlayerService, GameService, ScoreService, ComputerServic
 
   function play(playerMove) {
     self.computerMove = ComputerService.playMove(self.moves);
-    ScoreService.calculateResult(self.rules, playerMove, self.computerMove);
+    self.playerMove = playerMove;
+    ScoreService.calculateResult(self.rules, self.playerMove, self.computerMove);
     self.playerScore = ScoreService.getPlayerScore();
     self.computerScore = ScoreService.getComputerScore();
     self.verdict();
