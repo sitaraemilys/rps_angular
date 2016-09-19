@@ -15,7 +15,8 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.5.8"
+    "angular": "^1.5.8",
+    "angular-sweetalert": "angular-h-sweetalert#^1.4.7"
   },
   "devDependencies": {
     "angular-mocks": "^1.5.8"

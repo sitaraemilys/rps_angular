@@ -1,0 +1,17 @@
+<div class="play-page" ng-controller="PlayController as ctrl">
+
+
+    <p class="play-page__current-score">Current score {{ctrl.player}}: {{ctrl.playerScore}} vs. Super Sity: {{ctrl.computerScore}}</p>
+
+    <button class="button button--restart" ng-click=ctrl.resetScores()>Restart</button>
+
+
+
+    <p class="play-page__content">Pick yo move, yo.</p>
+
+  <img ng-repeat="move in ctrl.moves" ng-src="../../img/{{move}}.png" ng-click="ctrl.play(move)" class="play-page__content__move play-page__content__move--{{move}}">
+
+
+  <!-- <div class="{{move}}"></div> -->
+
+</div>
