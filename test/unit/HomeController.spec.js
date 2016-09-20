@@ -11,15 +11,17 @@ describe('HomeController', function() {
     ScoreService = _ScoreService_;
   }));
 
+  describe('#startGame', function() {
+    it("stores the player name in the player service", function(){
+      ctrl.startGame('sity');
+      expect(PlayerService.getPlayer()).toEqual('sity');
+    });
 
-  it("stores the player name in the player service", function(){
-    ctrl.startGame('sity');
-    expect(PlayerService.getPlayer()).toEqual('sity');
+    it("sets an initial score of 0 for both players", function(){
+      ctrl.startGame('sity');
+      expect(ScoreService.getPlayerScore()).toEqual(0);
+      expect(ScoreService.getComputerScore()).toEqual(0);
+    });
   });
 
-  it("sets an initial score of 0 for both players", function(){
-    ctrl.startGame('sity');
-    expect(ScoreService.getPlayerScore()).toEqual(0);
-    expect(ScoreService.getComputerScore()).toEqual(0);
-  });
 });

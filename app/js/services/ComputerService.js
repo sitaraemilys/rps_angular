@@ -5,6 +5,7 @@ function ComputerService(){
 
   var self = this;
   self.playMove = playMove;
+  self.getMove = getMove;
 
   function playMove(moves) {
     var numberOfMoves = moves.length;
@@ -12,4 +13,7 @@ function ComputerService(){
     return self.computerMove;
   }
 
+  function getMove(){
+    return self.computerMove;
+  }
 }

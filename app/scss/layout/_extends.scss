@@ -1,0 +1,8 @@
+%text-shadow {
+  text-shadow: -1px -1px 1px $color-text-highlight, 1px 1px 1px $color-text-shadow;
+}
+
+%background-highlight {
+  background-color: rgba($color-highlight, 0.5);
+
+}

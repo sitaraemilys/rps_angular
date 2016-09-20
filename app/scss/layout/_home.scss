@@ -1,3 +1,5 @@
+/* Homepage */
+
 .home-page {
 
   padding-left: 2%;
@@ -6,13 +8,13 @@
   text-align: center;
 
   &__main-title {
-  color: black;
-  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  color: $color-text;
+  @extend %text-shadow;
   text-transform: uppercase;
   font-size: 39px;
 
     &--highlight {
-      background-color: rgba(255, 255, 204, 0.5);
+      @extend %background-highlight;
     }
 
   }
@@ -21,8 +23,7 @@
 
     font-family: 'Sacramento', cursive;
     letter-spacing: 2px;
-    color: #009933;
-    // text-shadow: 1px 1px 1px #000;
+    color: $color-primary;
     font-size: 48px;
     margin-top: 3.5%;
 
@@ -34,7 +35,7 @@
   margin-top: 16%;
 
   &__input {
-    background-color:  #ffffcc;
+    background-color:  $color-highlight;
     font-family: 'Cutive Mono', monospace;
     width: 257px;
     height: 33px;
@@ -42,7 +43,7 @@
 
     &:focus {
       outline: none !important;
-      border: solid 3px #009933;
+      border: solid 3px $color-primary;
     }
 
     &#name {

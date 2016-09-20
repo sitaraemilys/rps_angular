@@ -11,8 +11,8 @@ angular.module('rockPaperScissors')
     self.getPlayerScore = getPlayerScore;
     self.getComputerScore = getComputerScore;
     self.calculateResult = calculateResult;
-    self.isDraw = isDraw;
-    self.isPlayerWin = isPlayerWin;
+    self._isDraw = _isDraw;
+    self._isPlayerWin = _isPlayerWin;
     self.reset = reset;
 
   function setPlayerScore() {
@@ -32,9 +32,9 @@ angular.module('rockPaperScissors')
   }
 
   function calculateResult(rules, playerMove, computerMove){
-    if (isDraw(playerMove, computerMove)){
+    if (_isDraw(playerMove, computerMove)){
         return ('DRAW');
-      } else if (isPlayerWin(rules, playerMove, computerMove)) {
+      } else if (_isPlayerWin(rules, playerMove, computerMove)) {
         self._playerWin();
         return ('YOU SCORE');
       } else {
@@ -44,11 +44,11 @@ angular.module('rockPaperScissors')
   }
 
 
-  function isDraw(playerMove, computerMove){
+  function _isDraw(playerMove, computerMove){
     return playerMove == computerMove;
   }
 
-  function isPlayerWin(rules, playerMove, computerMove){
+  function _isPlayerWin(rules, playerMove, computerMove){
     return rules[playerMove] == computerMove;
   }
 

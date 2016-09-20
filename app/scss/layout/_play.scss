@@ -1,8 +1,10 @@
+/* Play Page */
+
 .play-page {
 
   &__current-score {
-    background-color: #ffffcc;
-    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+    background-color: $color-highlight;
+    @extend %text-shadow;
     text-align: right;
     font-size: 18px;
   }
@@ -10,7 +12,7 @@
   &__content {
     font-family: 'Sacramento', cursive;
     letter-spacing: 2px;
-    color: #009933;
+    color: $color-primary;
     // text-shadow: 1px 1px 1px #fff;
     font-size: 42px;
     text-align: center;
@@ -20,7 +22,7 @@
   &__images {
     margin: 0 auto;
     max-height: 450px;
-    margin-left: 85px;
+    margin-left: 6.5%;
     margin-top: 3.6%;
 
     &--rock {
@@ -33,11 +35,11 @@
     text-align: center;
     margin-top: 4.5%;
     font-size: 24px;
-    color:  #ffffcc;
-    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+    color:  $color-highlight;
+    @extend %text-shadow;
 
     &--highlight {
-      background-color: black;
+      background-color: $color-text-shadow;
     }
   }
 
@@ -49,4 +51,4 @@
     animation:spin 4s linear;
 }
 
-* { outline: 2px dotted green; }
+* { outline: 2px dotted $color-primary; }

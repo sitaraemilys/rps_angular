@@ -1,19 +1,26 @@
+/* Results Page */
+
 .result-page {
 
   &__content {
     text-align: center;
-    color: black;
-    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+    color: $color-text;
+    @extend %text-shadow;
     text-transform: uppercase;
     font-size: 39px;
+    float: left;
+    margin-left: 34%;
+    margin-top: 16%;
 
     &--highlight {
-      background-color: rgba(255, 255, 204, 0.5);
+      @extend %background-highlight;
     }
 
     &__image {
       display: block;
-      margin: 0 auto;
+      float: left;
+      margin-left: 34%;
+      margin-top: 20%;
     }
   }
 }

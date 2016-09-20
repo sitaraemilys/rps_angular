@@ -8,9 +8,10 @@ function PlayController(PlayerService, GameService, ScoreService, ComputerServic
   var self = this;
   self.play = play;
   self.resetScores = resetScores;
-  self.verdict = verdict;
-  self.isPlayerWin = isPlayerWin;
-  self.isComputerWin = isComputerWin;
+  self._verdict = _verdict;
+  self._isPlayerWin = _isPlayerWin;
+  self._isComputerWin = _isComputerWin;
+  self._computerPlay = _computerPlay;
   self.player = PlayerService.getPlayer();
   self.moves = GameService.moves;
   self.rules = GameService.rules;
@@ -19,12 +20,12 @@ function PlayController(PlayerService, GameService, ScoreService, ComputerServic
 
 
   function play(playerMove) {
-    self.computerMove = ComputerService.playMove(self.moves);
+    self._computerPlay();
     self.playerMove = playerMove;
     self.score = ScoreService.calculateResult(self.rules, self.playerMove, self.computerMove);
     self.playerScore = ScoreService.getPlayerScore();
     self.computerScore = ScoreService.getComputerScore();
-    self.verdict();
+    self._verdict();
   }
 
   function resetScores() {
@@ -34,18 +35,23 @@ function PlayController(PlayerService, GameService, ScoreService, ComputerServic
 
   }
 
-  function verdict() {
-    if (self.isPlayerWin() || self.isComputerWin()) {
+  function _verdict() {
+    if (self._isPlayerWin() || self._isComputerWin()) {
       $state.go('result');
     }
   }
 
-  function isPlayerWin() {
+  function _isPlayerWin() {
     return self.playerScore == 3;
   }
 
-  function isComputerWin(){
+  function _isComputerWin(){
     return self.computerScore == 3;
+  }
+
+  function _computerPlay(){
+    ComputerService.playMove(self.moves);
+    self.computerMove = ComputerService.getMove();
   }
 
 }

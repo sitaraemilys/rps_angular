@@ -14,17 +14,29 @@ describe('PlayController', function() {
 
   }));
 
-  // i need to do homectrl.startGame to set the initial scores of 0 for each..
+  describe('#play', function() {
 
-  it("plays a move", function(){
-    ctrl.play('rock');
-    expect(ctrl.playerMove).toEqual('rock');
-    // how do i stub out the computer move?
+    beforeEach(function(){
+      ctrl.play('rock');
+    });
+
+    it("stores the player's move", function(){
+      expect(ctrl.playerMove).toEqual('rock');
+    });
+
+    it("stores the computer's move", function(){
+      expect(ctrl.computerMove).toMatch(('rock'||'paper'||'scissors'));
+    });
   });
 
-  xit("resets the scores", function(){
-    ctrl.startGame('sity');
-    expect(ScoreService.getPlayerScore()).toEqual(0);
-    expect(ScoreService.getComputerScore()).toEqual(0);
+  describe('#resetScores', function() {
+    it("resets the scores of both players", function(){
+      ctrl.playerScore = 2;
+      ctrl.computerScore = 1;
+      ctrl.resetScores();
+      expect(ctrl.playerScore).toEqual(0);
+      expect(ctrl.computerScore).toEqual(0);
+    });
   });
+
 });
