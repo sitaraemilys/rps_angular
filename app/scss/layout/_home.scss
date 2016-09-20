@@ -21,19 +21,17 @@
 
     font-family: 'Sacramento', cursive;
     letter-spacing: 2px;
-    color: black;
-    text-shadow: 1px 1px 1px #fff;
+    color: #009933;
+    // text-shadow: 1px 1px 1px #000;
     font-size: 48px;
+    margin-top: 3.5%;
 
-    &--highlight {
-      background-color: black;
-    }
   }
 }
 
 
 .content {
-  margin-top: 212px;
+  margin-top: 16%;
 
   &__input {
     background-color:  #ffffcc;

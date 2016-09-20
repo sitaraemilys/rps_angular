@@ -33,13 +33,13 @@ angular.module('rockPaperScissors')
 
   function calculateResult(rules, playerMove, computerMove){
     if (isDraw(playerMove, computerMove)){
-        swal('you chose ' + playerMove + '\n super sity chose ' + computerMove + '\n it\'s a draw');
+        return ('DRAW');
       } else if (isPlayerWin(rules, playerMove, computerMove)) {
-        swal('you chose ' + playerMove + '\n super sity chose ' + computerMove + '\n you win');
         self._playerWin();
+        return ('YOU SCORE');
       } else {
-        swal('you chose ' + playerMove + '\n super sity chose ' + computerMove + '\n super sity wins');
         self._computerWin();
+        return ('SUPER SITY SCORES');
       }
   }
 

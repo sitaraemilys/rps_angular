@@ -1,28 +1,46 @@
 .play-page {
 
   &__current-score {
-    background-color: white;
+    background-color: #ffffcc;
     text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
     text-align: right;
     font-size: 18px;
   }
 
   &__content {
+    font-family: 'Sacramento', cursive;
     letter-spacing: 2px;
-    color: white;
-    text-shadow: 1px 1px 1px #000;
-    font-size: 28px;
+    color: #009933;
+    // text-shadow: 1px 1px 1px #fff;
+    font-size: 42px;
+    text-align: center;
+    margin-top: 14.75%;
   }
 
   &__images {
     margin: 0 auto;
     max-height: 450px;
-    margin-left: 50px;
+    margin-left: 85px;
+    margin-top: 3.6%;
 
     &--rock {
-      margin-top: 20px;
+      margin-left: 32.5%;
+    }
+
+  }
+
+  &__score {
+    text-align: center;
+    margin-top: 4.5%;
+    font-size: 24px;
+    color:  #ffffcc;
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+
+    &--highlight {
+      background-color: black;
     }
   }
+
 }
 
 .spin-add {

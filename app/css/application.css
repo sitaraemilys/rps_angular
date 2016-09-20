@@ -30,14 +30,12 @@ Layout Imports
   .home-page__secondary-title {
     font-family: 'Sacramento', cursive;
     letter-spacing: 2px;
-    color: black;
-    text-shadow: 1px 1px 1px #fff;
-    font-size: 48px; }
-    .home-page__secondary-title--highlight {
-      background-color: black; }
+    color: #009933;
+    font-size: 48px;
+    margin-top: 3.5%; }
 
 .content {
-  margin-top: 212px; }
+  margin-top: 16%; }
   .content__input {
     background-color: #ffffcc;
     font-family: 'Cutive Mono', monospace;
@@ -51,21 +49,32 @@ Layout Imports
       font-size: 16px; }
 
 .play-page__current-score {
-  background-color: white;
+  background-color: #ffffcc;
   text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
   text-align: right;
   font-size: 18px; }
 .play-page__content {
+  font-family: 'Sacramento', cursive;
   letter-spacing: 2px;
-  color: white;
-  text-shadow: 1px 1px 1px #000;
-  font-size: 28px; }
+  color: #009933;
+  font-size: 42px;
+  text-align: center;
+  margin-top: 14.75%; }
 .play-page__images {
   margin: 0 auto;
   max-height: 450px;
-  margin-left: 50px; }
+  margin-left: 85px;
+  margin-top: 3.6%; }
   .play-page__images--rock {
-    margin-top: 20px; }
+    margin-left: 32.5%; }
+.play-page__score {
+  text-align: center;
+  margin-top: 4.5%;
+  font-size: 24px;
+  color: #ffffcc;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000; }
+  .play-page__score--highlight {
+    background-color: black; }
 
 .spin-add {
   -webkit-animation: spin 4s linear;
@@ -84,7 +93,6 @@ Layout Imports
   .result-page__content--highlight {
     background-color: rgba(255, 255, 204, 0.5); }
   .result-page__content__image {
-    width: 600px;
     display: block;
     margin: 0 auto; }
 
@@ -92,10 +100,9 @@ Layout Imports
 Component Imports
  -------------------------------------------------- */
 .button {
+  background-color: Transparent;
   border: solid 3px #009933;
-  background-color: #009933;
-  text-shadow: -1px -1px 1px #fff;
-  color: #ffffcc;
+  color: #009933;
   text-shadow: 1px 1px 1px #000;
   padding: 6px;
   text-align: center;
@@ -104,13 +111,17 @@ Component Imports
   font-size: 20px;
   font-family: 'Cutive Mono', monospace; }
   .button:hover {
-    background-color: Transparent;
-    color: #009933; }
+    background-color: #009933;
+    text-shadow: -1px -1px 1px #fff;
+    color: #ffffcc;
+    text-shadow: 1px 1px 1px #000; }
   .button:focus {
     outline: none !important; }
   .button--restart {
-    position: relative;
-    right: 0;
-    bottom: 0; }
+    float: right;
+    margin-top: 2%; }
+    .button--restart--result {
+      float: right;
+      margin-top: 3.4%; }
 
 /*# sourceMappingURL=application.css.map */
