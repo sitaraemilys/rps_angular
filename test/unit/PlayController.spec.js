@@ -25,7 +25,7 @@ describe('PlayController', function() {
     });
 
     it("stores the computer's move", function(){
-      expect(ctrl.computerMove).toMatch(('rock'||'paper'||'scissors'));
+      expect(ctrl.computerMove).toMatch((/^(rock|paper|scissors)$/));
     });
   });
 

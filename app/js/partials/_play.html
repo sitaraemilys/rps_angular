@@ -7,7 +7,7 @@
     <div class="play-page__content">Pick your weapon of choice kiddo.</div>
 
     <div class="play-page__images">
-      <img ng-repeat="move in ctrl.moves" ng-src="../../img/icons/{{move}}.png" ng-click="ctrl.play(move)" class="play-page__images play-page__images--{{move}}" animate-spin>
+      <img id="{{move}}" ng-repeat="move in ctrl.moves" ng-src="../../img/icons/{{move}}.png" ng-click="ctrl.play(move)" class="play-page__images play-page__images--{{move}}" animate-spin>
     </div>
 
     <div class="play-page__score"><span class="play-page__score play-page__score--highlight">{{ctrl.score}}</span></div>

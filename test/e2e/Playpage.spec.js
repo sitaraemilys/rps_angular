@@ -1,36 +1,48 @@
 describe("Playpage", function() {
 
   var helpers = require('./helpers');
+  var ComputerService;
+
+  beforeEach(function(){
+    ComputerService = jasmine.createSpyObj('ComputerService', ['playMove']);
+  });
 
   it("both players start with a current score of 0", function() {
     helpers.enterNameAndClick();
-    expect($$("p").first().getText()).toEqual("Current score Sity: 0 vs. Super Sity: 0");
+    expect($(".play-page__current-score").getText()).toEqual("Current score Sity: 0 vs. Super Sity: 0");
   });
 
-  xit("displays a draw", function(){
+  it("displays a draw", function(){
     helpers.enterNameAndClick();
-    var playerMove = $('#rock').click();
-    // how do i mock the computer move?
-    var computerMove = "rock";
-    // how do i test the content of an alert? this keeps saying the wait timed out...
-    browser.wait(protractor.ExpectedConditions.alertIsPresent(), 1000);
-   var alertDialog = browser.switchTo().alert();
-   expect(alertDialog.getText()).toEqual("you chose rock super sity chose rock - draw");
+    ComputerService.playMove.and.callFake(function(){
+      return 'rock';
+    });
+    $('#rock').click();
+    expect($(".play-page__score").getText()).toEqual('DRAW');
    });
 
   it("displays a player win", function(){
-
+    helpers.enterNameAndClick();
+    spyOn(ComputerService, 'playMoves').and.returnValue('paper');
+    var playerMove = $('#rock').click();
+    expect($(".play-page__score").getText()).toEqual('YOU SCORE');
   });
 
   it("displays a computer win", function(){
-
+    helpers.enterNameAndClick();
+    spyOn(ComputerService, 'playMoves').and.returnValue('scissors');
+    var playerMove = $('#rock').click();
+    expect($(".play-page__score").getText()).toEqual('SUPER SITY SCORES');
   });
 
-  it("can restart the game", function(){
-
+  xit("can restart the game", function(){
+    helpers.enterNameAndClick();
+    //someone scores
+    $('button button--restart').click();
+    expect($(".play-page__current-score").getText()).toEqual("Current score Sity: 0 vs. Super Sity: 0");
   });
 
-  it("finishes the game when either player gets to 3", function(){
+  xit("finishes the game when either player gets to 3", function(){
 
   });
 

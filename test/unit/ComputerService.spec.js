@@ -12,7 +12,7 @@ describe('ComputerService', function() {
     it("generates a computer move", function(){
       moves = ['rock', 'paper', 'scissors'];
       computerService.playMove(moves);
-      expect(computerService.getMove()).toMatch(('rock' || 'paper' || 'scissors'));
+      expect(computerService.getMove()).toMatch((/^(rock|paper|scissors)$/));
     });
   });
 

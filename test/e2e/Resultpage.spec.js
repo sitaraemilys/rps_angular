@@ -1,13 +1,13 @@
-describe("Homepage", function() {
+describe("Resultpage", function() {
 
   var helpers = require('./helpers');
 
-  it("displays the result", function() {
+  xit("displays the result", function() {
       helpers.enterNameAndClick();
       // how to make player win 3 times
   });
 
-  it("can restart the game", function(){
+  xit("can restart the game", function(){
 
   });
 
