@@ -98,5 +98,5 @@ Phew that's a lot of ✅✅✅
 
 ## Weaknesses (Don't read this if you don't want to cheat)
 * On completing a game, rather than clicking the restart button (like every good player would do) on the results page to restart a game, if you merely click on the back button, the app will take you back to the game you were playing with the existing scores and one can continue scoring until infinity...
-* If you decide to refresh the play page or result page, it is possible to play, however your player name will be absent and both scores will be NAN
+* If you decie to refresh the play page or result page, it is possible to play, however your player name will be absent and both scores will be NAN
 * However, if you click restart after refreshing, it is possible to play as a no-name player. Naughty.
