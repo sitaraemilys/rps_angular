@@ -80,7 +80,7 @@ $ npm run protractor test/protractor.conf.js
 
 You should see lots of lovely little ✅✅✅
 
-## Unit Tests
+### Unit Tests
 
 ```
 $ cd path/to/rps/
