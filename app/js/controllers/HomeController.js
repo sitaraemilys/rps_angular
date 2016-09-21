@@ -1,6 +1,8 @@
-export default class HomeController {
+'use strict'
 
-  constructor(PlayerService, ScoreService, $state){
+class HomeController {
+
+  constructor(){
     const self = this;
   }
 
@@ -12,6 +14,11 @@ export default class HomeController {
   }
 
 }
+
+angular.module('rockPaperScissors')
+       .controller('HomeController', HomeController);
+
+
 
 // angular.module('rockPaperScissors')
 //        .controller('HomeController', HomeController);

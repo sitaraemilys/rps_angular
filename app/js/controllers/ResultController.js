@@ -1,4 +1,6 @@
-export default class ResultController {
+'use strict';
+
+class ResultController {
 
   constructor(ScoreService, $state) {
     const self = this;
@@ -20,6 +22,11 @@ export default class ResultController {
   }
 
 }
+
+angular.module('rockPaperScissors')
+       .controller('ResultController', ResultController);
+
+
 
 // angular.module('rockPaperScissors')
 //        .controller('ResultController', ResultController);

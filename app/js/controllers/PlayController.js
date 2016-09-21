@@ -1,5 +1,6 @@
-export default class PlayController {
+'use strict';
 
+class PlayController {
   constructor(PlayerService, GameService, ScoreService, ComputerService, $state) {
     const self = this;
     self.player = PlayerService.getPlayer();
@@ -44,6 +45,10 @@ export default class PlayController {
     self.computerMove = ComputerService.getMove();
   }
 }
+
+angular.module('rockPaperScissors')
+       .controller('PlayController', PlayController);
+
 
 // angular.module('rockPaperScissors')
 //        .controller('PlayController', PlayController);

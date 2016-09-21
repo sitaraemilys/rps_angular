@@ -93,7 +93,7 @@ Phew that's a lot of ✅✅✅
 * HTML - *duh.*
 * SASS - *because SASS makes CSS sexy.*
 * BEM - *a methodology to achieve reusable components and code sharing in the front-end i.e. makes CSS sexy.*
-* Javascript ES6 - *everyone knows const is the new var.*
+* Javascript ES6 - *everyone knows const and let are the new var.*
 * Angular - *a client side application framework to make my web app super speedy and responsive.*
 
 ## Weaknesses (Don't read this if you don't want to cheat)
