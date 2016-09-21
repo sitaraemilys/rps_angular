@@ -90,13 +90,13 @@ $ karma start test/karma.conf.js
 Phew that's a lot of ✅✅✅
 
 ## Technologies Used
-* HTML - duh.
-* SASS - because SASS makes CSS sexy.
-* BEM - a methodology to achieve reusable components and code sharing in the front-end i.e. makes CSS sexy.
-* Javascript ES6 - because everyone knows const is the new var.
-* Angular - a client side application framework to make my web app super speedy and responsive
+* HTML - *duh.*
+* SASS - *because SASS makes CSS sexy.*
+* BEM - *a methodology to achieve reusable components and code sharing in the front-end i.e. makes CSS sexy.*
+* Javascript ES6 - *everyone knows const is the new var.*
+* Angular - *a client side application framework to make my web app super speedy and responsive.*
 
 ## Weaknesses (Don't read this if you don't want to cheat)
-* On completing a game, rather than clicking the restart button (like every good player would do) on the results page to restart a game, if you merely click on the back button, the app will take you back to the game you were playing with the existing scores and one can continue scoring until infinity...
-* If you decie to refresh the play page or result page, it is possible to play, however your player name will be absent and both scores will be NAN
+* On completing a game, rather than clicking the restart button (like every good player would do) on the results page to restart a game, if you merely click back, the app will take you back to the game you were playing with the existing scores and one can continue scoring until infinity...
+* If you decide to refresh the play page or result page, it is still possible to play, but your player name will be absent and both scores will be NAN.
 * However, if you click restart after refreshing, it is possible to play as a no-name player. Naughty.
