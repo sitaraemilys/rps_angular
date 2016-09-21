@@ -5,7 +5,7 @@ ResultController.$inject = ['ScoreService', '$state'];
 
 function ResultController (ScoreService, $state) {
 
-  var self = this;
+  const self = this;
   self.gameResult = gameResult;
   self.restart = restart;
   self.playerScore = ScoreService.getPlayerScore();

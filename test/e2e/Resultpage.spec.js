@@ -1,14 +1,13 @@
 describe("Resultpage", function() {
 
-  var helpers = require('./helpers');
+  const helpers = require('./helpers');
 
-  xit("displays the result", function() {
-      helpers.enterNameAndClick();
-      // how to make player win 3 times
-  });
-
-  xit("can restart the game", function(){
-
+  it("can restart the game", function(){
+    helpers.enterNameAndClick();
+    helpers.chooseRockUntilWinner();
+    $(".button--restart--result").click();
+    const message = "Current score Sity: 0 vs. Super Sity: 0";
+    expect($(".play-page__current-score").getText()).toEqual(message);
   });
 
 });

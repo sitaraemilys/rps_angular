@@ -10,7 +10,6 @@ function ComputerService(){
   function playMove(moves) {
     var numberOfMoves = moves.length;
     self.computerMove = moves[Math.floor(Math.random() * (numberOfMoves))];
-    return self.computerMove;
   }
 
   function getMove(){

@@ -5,7 +5,7 @@ PlayController.$inject = ['PlayerService', 'GameService', 'ScoreService', 'Compu
 
 function PlayController(PlayerService, GameService, ScoreService, ComputerService, $state) {
 
-  var self = this;
+  const self = this;
   self.play = play;
   self.resetScores = resetScores;
   self._verdict = _verdict;

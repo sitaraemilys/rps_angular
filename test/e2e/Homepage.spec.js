@@ -1,6 +1,6 @@
 describe("Homepage", function() {
 
-  var helpers = require('./helpers');
+  const helpers = require('./helpers');
 
   it("should get home page title", function() {
     browser.get('/');
@@ -9,7 +9,8 @@ describe("Homepage", function() {
 
   it("player must fill out name in order to begin game", function(){
     helpers.enterNameAndClick();
-    expect(browser.getCurrentUrl()).toEqual(browser.baseUrl + "/#/play");
+    const message = "Current score Sity: 0 vs. Super Sity: 0";
+    expect($(".play-page__current-score").getText()).toEqual(message);
   });
 
 });

@@ -5,7 +5,7 @@ HomeController.$inject = ['PlayerService', 'ScoreService', '$state'];
 
 function HomeController(PlayerService, ScoreService, $state) {
 
-  var self = this;
+  const self = this;
   self.startGame = startGame;
 
   function startGame(player){

@@ -53,8 +53,8 @@ angular.module('rockPaperScissors')
   }
 
   function reset(){
-    self.playerScore = 0;
-    self.computerScore = 0;
+    self.setPlayerScore();
+    self.setComputerScore();
   }
 
   function _playerWin() {
