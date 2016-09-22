@@ -99,3 +99,8 @@ Phew that's a lot of ✅✅✅
 * On completing a game, rather than clicking the restart button (like every good player would do) on the results page to restart a game, if you merely click back, the app will take you back to the game you were playing with the existing scores and one can continue scoring until infinity...
 * If you decide to refresh the play page or result page, it is still possible to play, but your player name will be absent and both scores will be NAN.
 * However, if you click restart after refreshing, it is possible to play as a no-name player. Naughty.
+
+## Things I would like to improve
+* Given more time I would want to integrate Webpack and Babel and make the it ES6.
+* Add some interactive animation using 'ngAnimate' to the CSS. Particularly a little wiggle on the weapon icons when clicked.
+* Make the CSS responsive.
