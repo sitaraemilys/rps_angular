@@ -3,7 +3,7 @@ angular.module('rockPaperScissors')
 
   function PlayerService(){
 
-    var self = this;
+    const self = this;
     self.addPlayer = addPlayer;
     self.getPlayer = getPlayer;
 
