@@ -1,4 +1,4 @@
-var app = angular.module('rockPaperScissors', ['ui.router']);
+const app = angular.module('rockPaperScissors', ['ui.router']);
   app.config(['$stateProvider', function($stateProvider) {
 
   $stateProvider

@@ -8,9 +8,6 @@
     @extend %text-shadow;
     text-transform: uppercase;
     font-size: 39px;
-    // float: left;
-    // margin-top: 16%;
-    // margin-left: 32%;
 
     &--highlight {
       @extend %background-highlight;

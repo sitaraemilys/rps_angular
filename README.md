@@ -75,7 +75,7 @@ In a *third* terminal (with your app and Selenium still running from the previou
 
 ```
 $ cd path/to/rps/
-$ npm run protractor test/protractor.conf.js
+$ npm run test-features
 ```
 
 You should see lots of lovely little ✅✅✅
@@ -84,7 +84,7 @@ You should see lots of lovely little ✅✅✅
 
 ```
 $ cd path/to/rps/
-$ karma start test/karma.conf.js
+$ npm run test-units
 ```
 
 Phew that's a lot of ✅✅✅

@@ -10,7 +10,6 @@
   &__main-title {
   color: $color-text;
   @extend %text-shadow;
-  text-transform: uppercase;
   font-size: 39px;
 
     &--highlight {

@@ -8,10 +8,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   position: relative;
-  font-family: 'Cutive Mono', monospace;
-  overflow: none !important;
-  overflow-x: none !important;
-  overflow-y: none !important; }
+  font-family: 'Cutive Mono', monospace; }
 
 /* --------------------------------------------------
 Layout Imports
@@ -24,7 +21,6 @@ Layout Imports
   text-align: center; }
   .home-page__main-title {
     color: #000;
-    text-transform: uppercase;
     font-size: 39px; }
   .home-page__secondary-title {
     font-family: 'Sacramento', cursive;

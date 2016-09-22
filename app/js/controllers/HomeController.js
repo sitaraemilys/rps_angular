@@ -1,4 +1,3 @@
-
 angular.module('rockPaperScissors')
        .controller('HomeController', HomeController);
 
