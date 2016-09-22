@@ -3,8 +3,7 @@ angular.module('rockPaperScissors')
 
 function GameService(){
 
-  var self = this;
+  const self = this;
   self.rules = {'rock': 'scissors', 'paper': 'rock', 'scissors': 'paper'};
   self.moves = ['rock', 'paper', 'scissors'];
-
 }

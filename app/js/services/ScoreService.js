@@ -3,7 +3,7 @@ angular.module('rockPaperScissors')
 
   function ScoreService(){
 
-    var self = this;
+    const self = this;
     self.setPlayerScore = setPlayerScore;
     self.setComputerScore = setComputerScore;
     self._computerWin = _computerWin;
