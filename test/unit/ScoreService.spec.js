@@ -2,24 +2,24 @@ describe('ScoreService', function() {
   beforeEach(module('rockPaperScissors')
   );
 
-  var ScoreService;
-  var rules;
+  const ScoreService;
+  const rules;
 
   beforeEach(inject(function(_ScoreService_) {
-    scoreService = _ScoreService_;
+    ScoreService = _ScoreService_;
   }));
 
   describe('#setPlayerScore', function() {
     it("sets the player's score to 0", function(){
-      scoreService.setPlayerScore();
-      expect(scoreService.getPlayerScore()).toEqual(0);
+      ScoreService.setPlayerScore();
+      expect(ScoreService.getPlayerScore()).toEqual(0);
     });
   });
 
   describe('#setComputerScore', function() {
     it("sets the computer's score to 0", function(){
-      scoreService.setComputerScore();
-      expect(scoreService.getComputerScore()).toEqual(0);
+      ScoreService.setComputerScore();
+      expect(ScoreService.getComputerScore()).toEqual(0);
     });
   });
 
@@ -33,21 +33,21 @@ describe('ScoreService', function() {
       playerMove = 'rock';
       computerMove = 'rock';
       message = 'DRAW';
-      expect(scoreService.calculateResult(rules, playerMove, computerMove)).toEqual(message);
+      expect(ScoreService.calculateResult(rules, playerMove, computerMove)).toEqual(message);
     });
 
     it('returns a player win', function(){
       playerMove = 'paper';
       computerMove = 'rock';
       message = 'YOU SCORE';
-      expect(scoreService.calculateResult(rules, playerMove, computerMove)).toEqual(message);
+      expect(ScoreService.calculateResult(rules, playerMove, computerMove)).toEqual(message);
     });
 
     it('returns a computer win', function(){
       playerMove = 'paper';
       computerMove = 'scissors';
       message = 'SUPER SITY SCORES';
-      expect(scoreService.calculateResult(rules, playerMove, computerMove)).toEqual(message);
+      expect(ScoreService.calculateResult(rules, playerMove, computerMove)).toEqual(message);
     });
   });
 
