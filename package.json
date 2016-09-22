@@ -4,13 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-real": "cd app && ../node_modules/http-server/bin/http-server",
-    "start-fake": "webpack-dev-server",
+    "start": "cd app && ../node_modules/http-server/bin/http-server",
     "install-selenium-dependencies": "./node_modules/protractor/bin/webdriver-manager update",
     "start-selenium": "./node_modules/protractor/bin/webdriver-manager start",
     "test-features": "./node_modules/protractor/bin/protractor test/protractor.conf.js",
-    "test-units": "./node_modules/karma/bin/karma start test/karma.conf.js",
-    "test": "babel-node node_modules/.bin/jasmine"
+    "test-units": "./node_modules/karma/bin/karma start test/karma.conf.js"
   },
   "author": "",
   "license": "ISC",
@@ -29,7 +27,6 @@
     "karma-chrome-launcher": "^2.0.0",
     "karma-jasmine": "^1.0.2",
     "karma-spec-reporter": "0.0.26",
-    "protractor": "^4.0.2",
-
+    "protractor": "^4.0.2"
   }
 }
