@@ -1,21 +1,3 @@
-// import angular from 'angular';
-//
-// class ComputerService {
-//
-//   const self = this;
-//
-//   playMove(moves) {
-//     var numberOfMoves = moves.length;
-//     self.computerMove = moves[Math.floor(Math.random() * (numberOfMoves))];
-//   }
-//
-//   getMove = () => self.computerMove;
-//
-// }
-
-
-
-
 angular.module('rockPaperScissors')
        .service('ComputerService', ComputerService);
 
