@@ -11,6 +11,11 @@ module.exports = function(config){
         'test/unit/**/*.js'
       ],
 
+      preprocessors: {
+        "app/js/**/*.js": ["babel"],
+        "test/unit/**/*.js": ["babel"]
+      },
+
       autoWatch : true,
 
       frameworks: ['jasmine'],
