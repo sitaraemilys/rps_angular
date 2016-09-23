@@ -1,5 +1,5 @@
 const app = angular.module('rockPaperScissors', ['ui.router']);
-  app.config(['$stateProvider', function($stateProvider) {
+  app.config(['$stateProvider', '$locationProvider', function($stateProvider, $locationProvider) {
 
   $stateProvider
   .state('home', {
@@ -16,4 +16,10 @@ const app = angular.module('rockPaperScissors', ['ui.router']);
       url: '/result',
       templateUrl: 'js/partials/_result.html'
     });
+
+    $locationProvider.html5Mode({
+                 enabled: true,
+                 requireBase: false
+          });
+
 }]);
