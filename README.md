@@ -41,7 +41,7 @@ $ cd path/to/rps/
 $ npm run start
 ```
 
-Go to [http://localhost:8080/#/](http://localhost:8080/#/) in your web browser.
+Go to [http://localhost:8080](http://localhost:8080) in your web browser.
 
 Enter your name/fake name/alter-ego/favorite Starts Wars character to start the game.
 
